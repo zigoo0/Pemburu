@@ -45,6 +45,9 @@ def Filename_Handler(url):
 	files = [file_name, "%s.tar"%(file_noext), "%s.rar"%(file_noext), "%s.zip"%(file_noext), "%s.txt"%(file_noext)]
 	files += ["%s.old"%(file_name), "%s~"%(file_name),"%s.bak"%(file_name), "%s.tar.gz"%(file_noext)]
 	files += ["%s-backup.%s"%(file_noext, file_ext), "%s-bkp.%s"%(file_noext, file_ext), "backup-%s.%s"%(file_noext, file_ext)]
+	files += [".%s.%s.swp"%(file_noext, file_ext), "%s.%s"%(file_noext, file_ext)+"s", "_%s.%s"%(file_noext, file_ext)]
+	files += ["%s2.%s"%(file_noext, file_ext), "%s.%s_"%(file_noext, file_ext), "%s.%s.gz"%(file_noext, file_ext)]
+	files += ["%s_old.%s"%(file_noext, file_ext)]
 	return files #returning the list of created files.
 	""" Assume that you submitted upload.php, here is the output then: """
 	#['upload.php', 'upload.tar', 'upload.rar', 'upload.zip', 'upload.txt', 'upload.php.old', 'upload.php~',
